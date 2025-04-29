@@ -183,6 +183,13 @@ export default function HomePage() {
   return (
     <div className="container mx-auto p-4 sm:p-6 lg:p-8">
 
+      {/* --- Title Section ---*/}
+      <div className="flex items-center gap-3 pb-4 mb-6">
+        <h1>
+          Welcome to SafeDrop!
+        </h1>
+      </div>
+      
       {/* --- Create Group Section --- */}
       {/* Wrap in a Card for consistent styling */}
       <Card className="mb-8 shadow-sm">
@@ -232,9 +239,9 @@ export default function HomePage() {
           {/* Icon using primary color for accent */}
           <Users className="size-7 text-primary flex-shrink-0" />
           {/* Heading text with slightly adjusted font weight */}
-          <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight text-foreground">
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-foreground">
               My Groups
-          </h1>
+          </h2>
       </div>
 
       {/* Display error if fetching groups failed *after* initial load */}
